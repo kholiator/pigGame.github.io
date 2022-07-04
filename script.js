@@ -1,4 +1,4 @@
-var scores,roundScore,activePlayer;
+let scores,roundScore,activePlayer;
 
 function initialize(){ 
 scores=[0,0];
@@ -14,8 +14,8 @@ initialize();
 //roll button
 
 document.querySelector('.btn--roll').addEventListener('click',function(){
-    var dice=Math.floor(Math.random()*6+1);
-    var diceDOM=document.querySelector('.dice');
+    const dice=Math.floor(Math.random()*6+1);
+    const diceDOM=document.querySelector('.dice');
     diceDOM.style.display='block';
     diceDOM.src='dice-'+dice+'.png';
     if(dice===1){
